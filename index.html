@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Title</title>
+	    <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css" >
+		<link rel="stylesheet" href="css/bootstrap-theme.css" >
+		<link rel="stylesheet" href="css/normalize.css" >
+	    <script src="js/node-modules/jquery/jquery-2.2.3.js">
+		</script>
+		<script src="js/node-modules/bootstrap/bootstrap.js">
+		</script>
+	    <script src="js/node-modules/angular/angular.js">
+		</script>
+		<script src="js/app.js">
+		</script>
+		<script src="js/controllers/titulo-controller.js">
+		</script>
+	</head>
+	<body ng-app="aplicacion">
+		<div ng-controller="TituloController">
+			<!-- El contenido del h2 es definido mediante un controlador--> 
+			<h1>{{titulo}}</h1>
+			<h2>{{subtitulo}}</h2>
+			<input type="text" ng-model="modelo" />
+			<span>{{ modelo }}</span>
+
+		</div>
+	</body>
+</html>
